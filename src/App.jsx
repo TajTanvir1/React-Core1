@@ -1,3 +1,4 @@
+import Actor from './Actor'
 import './App.css'
 import BookStore from './Bookstore'
 
@@ -9,10 +10,17 @@ function App() {
     {id: 1, name: 'Math', price: 100},
   ]
 
+  const actors =['Sakib', 'Riaz', 'Raj', 'Salmal']
+
   return (
     <>      
       <h1>Vite + React</h1>
-      
+      <Actor name={'Bapppa Raz'}></Actor>
+      {
+        actors.map(actor => <Actor name={actor}></Actor>)
+      }
+      {/* <BookStore books={books}></BookStore> */}
+
     </>
   )
 }
