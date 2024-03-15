@@ -2,6 +2,8 @@ import Actor from './Actor'
 import './App.css'
 import BookStore from './Bookstore'
 import Book from './Book'
+import Counter from './Counter'
+import Friends from './Friends'
 
 function App() {
   const books = [
@@ -17,6 +19,8 @@ function App() {
   return (
     <>      
       <h1>Vite + React</h1>
+      <Friends></Friends>
+      <Counter></Counter>
       {/* <Actor name={'Bapppa Raz'}></Actor>
       {
         actors.map(actor => <Actor name={actor}></Actor>)
